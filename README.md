@@ -1,0 +1,31 @@
+# sfAdminHijackPlugin
+
+The `sfJqueryWidgetsPlugin` is a symfony plugin that adds a simple jquery widget for managing doctrine one-to-many relations to the list of available widgets bundled in the framework.
+
+It bears little functionality itself but instead *hijacks* a generated admin module which is used in a jQuery modal dialog.
+
+## Installation
+
+  * Install the Plugin
+  
+        $ symfony plugin:install sfAdminHijackPlugin
+      
+  * Clear Your Cache
+  
+        $ symfony cc
+  
+  * Publish Plugins Assets
+  
+        $ symfony plugin:publish-assets
+
+## Usage
+
+Simply add this widget in your form class for the one-to-many relation field.
+
+      $this->widgetSchema['category_id'] = new sfWidgetFormJQueryAdminHijackDoctrineChoice(array(
+        'model' => 'Category',
+        'module' => 'category',
+        'fields' => array('name')
+      ));
+
+Where 'module' is the name of the module you generated using the ``doctrine:generate-admin`` task.
