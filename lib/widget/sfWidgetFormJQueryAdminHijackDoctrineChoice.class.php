@@ -32,7 +32,9 @@ class sfWidgetFormJQueryAdminHijackDoctrineChoice extends sfWidgetFormDoctrineCh
     ');
 
     $this->addOption('javascript.sources', array(
-      '/sfAdminHijackPlugin/js/widget.js'
+      '/sfAdminHijackPlugin/js/widget.js',
+      '/sfAdminHijackPlugin/js/jquery.autocomplete.min.js',
+      '/sfAdminHijackPlugin/js/jquery.blockUI.js'
     ));
   }
 
