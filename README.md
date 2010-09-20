@@ -29,3 +29,9 @@ Simply add this widget in your form class for the one-to-many relation field.
       ));
 
 Where 'module' is the name of the module you generated using the ``doctrine:generate-admin`` task.
+
+## Known limitations
+
+  * Only one-to-many relations are supported.
+  * The widget assumes that the primary key of the related model is called ``id``.
+  * JQuery has to be present
