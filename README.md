@@ -35,3 +35,4 @@ Where 'module' is the name of the module you generated using the ``doctrine:gene
   * Only one-to-many relations are supported.
   * The widget assumes that the primary key of the related model is called ``id``.
   * JQuery has to be present
+  * The related instances created with the new dialog are saved on the fly. If used uncaringly this can produce a lot of orphaned entries in your database.
