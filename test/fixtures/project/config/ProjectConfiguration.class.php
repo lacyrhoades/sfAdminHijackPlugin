@@ -12,7 +12,7 @@ class ProjectConfiguration extends sfProjectConfiguration
 {
   public function setup()
   {
-    $this->setPlugins(array('sfAdminHijacksPlugin'));
-    $this->setPluginPath('sfAdminHijacksPlugin', dirname(__FILE__).'/../../../..');
+    $this->setPlugins(array('sfAdminHijackPlugin'));
+    $this->setPluginPath('sfAdminHijackPlugin', dirname(__FILE__).'/../../../..');
   }
 }

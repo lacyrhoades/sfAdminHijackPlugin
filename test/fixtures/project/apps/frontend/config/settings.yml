@@ -25,7 +25,7 @@ test:
 all:
   .settings:
     # Form security secret (CSRF protection)
-    csrf_secret:            sfAdminHijacksPlugin
+    csrf_secret:            sfAdminHijackPlugin
 
     # Output escaping settings
     escaping_strategy:      on

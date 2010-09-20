@@ -1,6 +1,6 @@
 <?php
 
-class sfWidgetFormDoctrineModalChoice extends sfWidgetFormDoctrineChoice
+class sfWidgetFormJQueryAdminHijackDoctrineChoice extends sfWidgetFormDoctrineChoice
 {
   protected function configure($options = array(), $attributes = array())
   {
@@ -32,7 +32,7 @@ class sfWidgetFormDoctrineModalChoice extends sfWidgetFormDoctrineChoice
     ');
 
     $this->addOption('javascript.sources', array(
-      '/sfAdminHijacksPlugin/js/widget.js'
+      '/sfAdminHijackPlugin/js/widget.js'
     ));
   }
 
