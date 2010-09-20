@@ -1,0 +1,17 @@
+widgetFormHandler:
+  url:   /widgetFormHandler/:targetModule/:model/:id/:clone
+  param: { module: widgetFormHandler, action: form, id: 0, clone: 0 }
+  requirements:
+    sf_method: [get]
+
+widgetAutoComplete:
+  url:   /widgetAutocomplete/:model/:fields/:id
+  param: { module: widgetFormHandler, action: autocomplete, id: 0 }
+  requirements:
+    sf_method: [get]
+
+widgetDelete:
+  url:   /widgetAutocomplete/:model/:id
+  param: { module: widgetFormHandler, action: delete, id: 0 }
+  requirements:
+    sf_method: [delete]
